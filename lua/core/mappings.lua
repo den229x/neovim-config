@@ -14,7 +14,8 @@ nm(',<leader>', ':nohlsearch<CR>')
 vim.keymap.set('n', '<leader>lD', vim.diagnostic.open_float)
 vim.keymap.set('n', '[d', vim.diagnostic.goto_prev)
 vim.keymap.set('n', ']d', vim.diagnostic.goto_next)
-
+vim.keymap.set('n', '<leader>d', vim.diagnostic.disable) -- disable view errors
+vim.keymap.set('n', '<leader>D', vim.diagnostic.enable)  -- enable view errors
 -- Telescope
 local builtin = require('telescope.builtin')
 vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
